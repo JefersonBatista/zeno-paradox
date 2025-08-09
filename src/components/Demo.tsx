@@ -27,12 +27,12 @@ function Demo() {
         <img
           src={Achilles}
           alt="Achilles"
-          style={{ marginLeft: `${achilles}px` }}
+          style={{ transform: `translateX(${achilles}px)` }}
         />
         <img
           src={Tortoise}
           alt="Tortoise"
-          style={{ marginLeft: `${tortoise}px` }}
+          style={{ transform: `translateX(${tortoise}px)` }}
         />
         <div className="line" />
       </div>
