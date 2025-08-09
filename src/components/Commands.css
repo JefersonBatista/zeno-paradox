@@ -1,0 +1,12 @@
+.commands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.commands > button {
+  background-color: rgb(17, 74, 128);
+  color: white;
+  margin-top: 30px;
+}
