@@ -5,10 +5,18 @@ import Tortoise from "../assets/tortoise.jpg";
 
 function Demo() {
   const [achilles, setAchilles] = useState<number>(0);
-  const [tortoise, setTortoise] = useState<number>(480);
+  const [tortoise, setTortoise] = useState<number>(320);
+
+  const handleClick = () => {
+    setAchilles(tortoise);
+    setTortoise((prev) => prev + (2 * (tortoise - achilles)) / 3);
+  };
 
   return (
     <>
+      <span style={{ marginBottom: "30px" }}>
+        Aquiles corre com 1,5x da velocidade da Tartaruga
+      </span>
       <div className="demo">
         <img
           src={Achilles}
@@ -22,7 +30,10 @@ function Demo() {
         />
         <div className="line" />
       </div>
-      <button>Avançar</button>
+      <button onClick={handleClick}>Avançar</button>
+      <span style={{ marginTop: "30px" }}>
+        Distância entre Aquiles e a Tartaruga: {tortoise - achilles}
+      </span>
     </>
   );
 }
