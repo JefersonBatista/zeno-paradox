@@ -1,5 +1,12 @@
 .line {
+  display: flex;
+  justify-content: space-between;
   height: 3px;
   background-color: black;
   width: 1000px;
+}
+
+.line > img {
+  width: 30px;
+  height: 30px;
 }
