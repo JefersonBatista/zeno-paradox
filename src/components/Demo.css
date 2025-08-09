@@ -1,0 +1,27 @@
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: lightcoral;
+  width: 1000px;
+  height: 300px;
+}
+
+.demo > .line {
+  height: 3px;
+  background-color: black;
+  width: 1000px;
+}
+
+.demo > img {
+  width: 30px;
+  height: 30px;
+}
+
+.demo > button {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+}

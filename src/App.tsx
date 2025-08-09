@@ -1,8 +1,8 @@
-import Line from "./components/Line";
+import Demo from "./components/Demo";
 import "./App.css";
 
 function App() {
-  return <Line />;
+  return <Demo />;
 }
 
 export default App;
